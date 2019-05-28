@@ -1,0 +1,23 @@
+.r_title{
+	margin-top: -13px;
+	width: 100%;height: 30px;
+	background-color: lightcyan;
+	border-bottom: 1px solid darkgray;
+}
+.r_title p{
+	font: 13px "宋体";
+	margin-left: 20px;
+	line-height: 30px;
+}
+.right table{
+	font: 13px "宋体";
+	margin-left: 150px;
+	margin-top: 30px;
+}
+.right table tr td:first-child{
+	text-align: right;
+}
+.right span{
+	color: red;
+	
+}

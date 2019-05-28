@@ -1,0 +1,20 @@
+.nav_right{
+	width: 600px;
+	margin-left: 175px;
+}
+
+.menu li:nth-child(2){
+	margin-left: 65px;
+}
+.menu li:nth-child(3){
+	margin-left: 90px;
+}
+.menu li:nth-child(4){
+	margin-left: 60px;
+}
+.menu li:nth-child(5){
+	margin-left: 65px;
+}
+.menu li:nth-child(6){
+	margin-left: 100px;
+}

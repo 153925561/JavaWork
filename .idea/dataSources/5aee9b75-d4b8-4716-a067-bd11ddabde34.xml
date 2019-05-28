@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="sushe@localhost">
+  <database-model serializer="dbm" rdbms="MYSQL" format-version="4.8">
+    <root id="1">
+      <ServerVersion>5.0</ServerVersion>
+      <DefaultCasing>lower/lower</DefaultCasing>
+    </root>
+    <schema id="2" parent="1" name="information_schema"/>
+    <schema id="3" parent="1" name="mysql"/>
+    <schema id="4" parent="1" name="sushe">
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </schema>
+    <schema id="5" parent="1" name="test"/>
+    <schema id="6" parent="1" name="yuangong"/>
+    <table id="7" parent="4" name="admins"/>
+    <table id="8" parent="4" name="building"/>
+    <table id="9" parent="4" name="missing"/>
+    <table id="10" parent="4" name="outers"/>
+    <table id="11" parent="4" name="room"/>
+    <table id="12" parent="4" name="student"/>
+    <table id="13" parent="4" name="teacher"/>
+    <column id="14" parent="7" name="adminId">
+      <Position>1</Position>
+      <Comment>系统管理员id</Comment>
+      <DataType>BIGINT(20) UNSIGNED|-5s</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="15" parent="7" name="adminUsername">
+      <Position>2</Position>
+      <Comment>系统管理员登陆名</Comment>
+      <DataType>VARCHAR(255)|12s</DataType>
+    </column>
+    <column id="16" parent="7" name="adminPassword">
+      <Position>3</Position>
+      <Comment>系统管理员登陆密码</Comment>
+      <DataType>VARCHAR(255)|12s</DataType>
+    </column>
+    <key id="17" parent="7" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>adminId</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="18" parent="8" name="buildId">
+      <Position>1</Position>
+      <Comment>楼宇id</Comment>
+      <DataType>BIGINT(20) UNSIGNED|-5s</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="19" parent="8" name="buildName">
+      <Position>2</Position>
+      <Comment>楼宇名称</Comment>
+      <DataType>VARCHAR(255)|12s</DataType>
+    </column>
+    <column id="20" parent="8" name="buildTeacher">
+      <Position>3</Position>
+      <Comment>楼宇管理员</Comment>
+      <DataType>VARCHAR(255)|12s</DataType>
+    </column>
+    <key id="21" parent="8" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>buildId</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="22" parent="9" name="missId">
+      <Position>1</Position>
+      <Comment>缺寝记录id</Comment>
+      <DataType>BIGINT(20) UNSIGNED|-5s</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="23" parent="9" name="missDate">
+      <Position>2</Position>
+      <Comment>缺寝时间</Comment>
+      <DataType>VARCHAR(255)|12s</DataType>
+    </column>
+    <column id="24" parent="9" name="missName">
+      <Position>3</Position>
+      <Comment>缺寝人</Comment>
+      <DataType>VARCHAR(255)|12s</DataType>
+    </column>
+    <column id="25" parent="9" name="missSex">
+      <Position>4</Position>
+      <Comment>缺寝人性别</Comment>
+      <DataType>VARCHAR(255)|12s</DataType>
+    </column>
+    <column id="26" parent="9" name="missClass">
+      <Position>5</Position>
+      <Comment>缺寝人所在班级</Comment>
+      <DataType>VARCHAR(255)|12s</DataType>
+    </column>
+    <column id="27" parent="9" name="missRoom">
+      <Position>6</Position>
+      <Comment>缺寝人所在寝室</Comment>
+      <DataType>VARCHAR(255)|12s</DataType>
+    </column>
+    <column id="28" parent="9" name="missNote">
+      <Position>7</Position>
+      <Comment>缺寝备注</Comment>
+      <DataType>VARCHAR(255)|12s</DataType>
+    </column>
+    <column id="29" parent="9" name="missBuilding">
+      <Position>8</Position>
+      <Comment>缺寝所在楼宇</Comment>
+      <DataType>VARCHAR(255)|12s</DataType>
+    </column>
+    <column id="30" parent="9" name="missTeacher">
+      <Position>9</Position>
+      <Comment>缺寝所在楼宇管理员</Comment>
+      <DataType>VARCHAR(255)|12s</DataType>
+    </column>
+    <column id="31" parent="9" name="missUsername">
+      <Position>10</Position>
+      <Comment>缺寝人用户名</Comment>
+      <DataType>VARCHAR(255)|12s</DataType>
+    </column>
+    <key id="32" parent="9" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>missId</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="33" parent="10" name="outId">
+      <Position>1</Position>
+      <Comment>迁出记录id</Comment>
+      <DataType>BIGINT(20) UNSIGNED|-5s</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="34" parent="10" name="outDate">
+      <Position>2</Position>
+      <Comment>迁出时间</Comment>
+      <DataType>VARCHAR(255)|12s</DataType>
+    </column>
+    <column id="35" parent="10" name="outName">
+      <Position>3</Position>
+      <Comment>迁出人</Comment>
+      <DataType>VARCHAR(255)|12s</DataType>
+    </column>
+    <column id="36" parent="10" name="outSex">
+      <Position>4</Position>
+      <Comment>迁出人性别</Comment>
+      <DataType>VARCHAR(255)|12s</DataType>
+    </column>
+    <column id="37" parent="10" name="outClass">
+      <Position>5</Position>
+      <Comment>迁出人所在班级</Comment>
+      <DataType>VARCHAR(255)|12s</DataType>
+    </column>
+    <column id="38" parent="10" name="outNote">
+      <Position>6</Position>
+      <Comment>迁出备注</Comment>
+      <DataType>VARCHAR(255)|12s</DataType>
+    </column>
+    <key id="39" parent="10" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>outId</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="40" parent="11" name="roomId">
+      <Position>1</Position>
+      <Comment>寝室id</Comment>
+      <DataType>BIGINT(20) UNSIGNED|-5s</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="41" parent="11" name="roomBuilding">
+      <Position>2</Position>
+      <Comment>寝室所在楼宇</Comment>
+      <DataType>VARCHAR(255)|12s</DataType>
+    </column>
+    <column id="42" parent="11" name="roomNumber">
+      <Position>3</Position>
+      <Comment>寝室号</Comment>
+      <DataType>VARCHAR(255)|12s</DataType>
+    </column>
+    <column id="43" parent="11" name="roomPeople">
+      <Position>4</Position>
+      <Comment>寝室人数</Comment>
+      <DataType>VARCHAR(255)|12s</DataType>
+    </column>
+    <column id="44" parent="11" name="roomPhone">
+      <Position>5</Position>
+      <Comment>寝室电话</Comment>
+      <DataType>VARCHAR(255)|12s</DataType>
+    </column>
+    <key id="45" parent="11" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>roomId</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="46" parent="12" name="stuId">
+      <Position>1</Position>
+      <Comment>学生id</Comment>
+      <DataType>BIGINT(20) UNSIGNED|-5s</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="47" parent="12" name="stuUsername">
+      <Position>2</Position>
+      <Comment>学生用户名</Comment>
+      <DataType>VARCHAR(255)|12s</DataType>
+    </column>
+    <column id="48" parent="12" name="stuPassword">
+      <Position>3</Position>
+      <Comment>学生密码</Comment>
+      <DataType>VARCHAR(255)|12s</DataType>
+    </column>
+    <column id="49" parent="12" name="stuName">
+      <Position>4</Position>
+      <Comment>学生姓名</Comment>
+      <DataType>VARCHAR(255)|12s</DataType>
+    </column>
+    <column id="50" parent="12" name="stuSex">
+      <Position>5</Position>
+      <Comment>学生性别</Comment>
+      <DataType>VARCHAR(255)|12s</DataType>
+    </column>
+    <column id="51" parent="12" name="stuClass">
+      <Position>6</Position>
+      <Comment>学生所在班级</Comment>
+      <DataType>VARCHAR(255)|12s</DataType>
+    </column>
+    <column id="52" parent="12" name="stuRoom">
+      <Position>7</Position>
+      <Comment>学生所在寝室</Comment>
+      <DataType>VARCHAR(255)|12s</DataType>
+    </column>
+    <column id="53" parent="12" name="stuBuilding">
+      <Position>8</Position>
+      <Comment>学生所在楼宇</Comment>
+      <DataType>VARCHAR(255)|12s</DataType>
+    </column>
+    <column id="54" parent="12" name="stuStatus">
+      <Position>9</Position>
+      <Comment>学生入住状态</Comment>
+      <DataType>VARCHAR(255)|12s</DataType>
+    </column>
+    <key id="55" parent="12" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>stuId</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="56" parent="13" name="teacherId">
+      <Position>1</Position>
+      <Comment>楼宇管理员id</Comment>
+      <DataType>BIGINT(20) UNSIGNED|-5s</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="57" parent="13" name="teacherUsername">
+      <Position>2</Position>
+      <Comment>楼宇管理员用户名</Comment>
+      <DataType>VARCHAR(255)|12s</DataType>
+    </column>
+    <column id="58" parent="13" name="teacherPassword">
+      <Position>3</Position>
+      <Comment>楼宇管理员密码</Comment>
+      <DataType>VARCHAR(255)|12s</DataType>
+    </column>
+    <column id="59" parent="13" name="teacherName">
+      <Position>4</Position>
+      <Comment>楼宇管理员姓名</Comment>
+      <DataType>VARCHAR(255)|12s</DataType>
+    </column>
+    <column id="60" parent="13" name="teacherSex">
+      <Position>5</Position>
+      <Comment>楼宇管理员性别</Comment>
+      <DataType>VARCHAR(255)|12s</DataType>
+    </column>
+    <column id="61" parent="13" name="teacherPhone">
+      <Position>6</Position>
+      <Comment>楼宇管理员电话</Comment>
+      <DataType>VARCHAR(255)|12s</DataType>
+    </column>
+    <key id="62" parent="13" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>teacherId</ColNames>
+      <Primary>1</Primary>
+    </key>
+  </database-model>
+</dataSource>
